@@ -1,12 +1,10 @@
 import {Dropdown as BSD} from "react-bootstrap";
-import {LinkContainer} from 'react-router-bootstrap'
+import {Link} from "react-router-dom";
 
 export function DropdownItem({children, to}) {
     return (
-        <LinkContainer to={to}>
-            <BSD.Item>
-                {children}
-            </BSD.Item>
-        </LinkContainer>
+        <BSD.Item as={Link} to={to}>
+            {children}
+        </BSD.Item>
     )
 }

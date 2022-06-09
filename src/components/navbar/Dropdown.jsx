@@ -1,7 +1,7 @@
 import {NavDropdown, Nav} from "react-bootstrap";
 import {Dropdown as BSD} from "react-bootstrap" ;
 import {useState} from "react";
-import {LinkContainer} from 'react-router-bootstrap'
+import {NavLink} from "react-router-dom";
 
 export function Dropdown({children, title, to}) {
     const [show, setShow] = useState(false);
@@ -13,9 +13,9 @@ export function Dropdown({children, title, to}) {
                  onMouseLeave={() => {
                      setShow(false)
                  }}>
-                <LinkContainer to={to}>
-                    <BSD.Toggle as={Nav.Link}>{title}</BSD.Toggle>
-                </LinkContainer>
+
+                <BSD.Toggle as={NavLink} to={to} className={'nav-link'}>{title}</BSD.Toggle>
+
                 <BSD.Menu>
                     {children}
                 </BSD.Menu>

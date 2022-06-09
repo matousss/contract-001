@@ -1,14 +1,12 @@
-import {LinkContainer} from 'react-router-bootstrap'
 import {Nav} from 'react-bootstrap'
+import { NavLink} from "react-router-dom";
 
 export function NavbarLink({children, to}) {
     return (
         <Nav.Item>
-            <LinkContainer to={to}>
-                <Nav.Link>
-                    {children}
-                </Nav.Link>
-            </LinkContainer>
+            <NavLink to={to} className={'nav-link'}>
+                {children}
+            </NavLink>
         </Nav.Item>
     )
 }
