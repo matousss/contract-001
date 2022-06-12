@@ -1,4 +1,4 @@
-import {Page} from "./Page";
+import {Article} from "./Article";
 
 export function Contact () {
     return (
