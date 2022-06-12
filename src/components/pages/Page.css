@@ -1,0 +1,17 @@
+.page {
+    transition-duration: 300ms;
+}
+
+p {
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+@media (max-width: 992px) {
+    p {
+        padding: 0.25rem;
+    }
+    .container-fluid {
+        width: 75% !important;
+    }
+}
