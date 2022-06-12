@@ -9,9 +9,9 @@ import {Link} from "react-router-dom";
 
 export function Navbar() {
     return (
-        <NB className={'p-0 sticky-top bg-white border-bottom border-1 border-dark'} expand={'sm'}>
+        <NB className={'p-0 sticky-top bg-white border-bottom border-1 border-dark'} expand={'md'}>
             <NB.Brand className={'mx-4'} as={Link} to={'/'}>
-                Černá vila
+                Lorem ipsum
             </NB.Brand>
             <NB.Toggle/>
            <Container fluid className={'w-10 p-0'}>
@@ -23,7 +23,7 @@ export function Navbar() {
                            <DropdownItem to="/location#2">Koně</DropdownItem>
                        </Dropdown>
                        <NavbarLink to={'/gallery'}>Galerie</NavbarLink>
-                       <NavbarLink to={'/about-us'}><nobr>O Nás</nobr></NavbarLink>
+                       <NavbarLink to={'/about'}><nobr>O Mně</nobr></NavbarLink>
                        <NavbarLink to={'/contact'}>Kontakt</NavbarLink>
                    </Nav>
                </NB.Collapse>

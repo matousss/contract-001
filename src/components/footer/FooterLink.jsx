@@ -7,6 +7,5 @@ export function FooterLink({to, label}) {
                     {label}
                 </nobr>
             </Link>
-
     );
 }

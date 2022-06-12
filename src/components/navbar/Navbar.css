@@ -87,9 +87,20 @@
     background-color: var(--btn-active);
 }
 
+.navbar-toggler {
+    border-radius: 0 !important;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
 .navbar-toggler:focus, .navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler:visited, .navbar-toggler-icon{
     outline: none;
     box-shadow: none;
+}
+
+.navbar-collapse.show .nav-link:before {
+    display: none;
 }
 
 @media (max-width: 576px) {
