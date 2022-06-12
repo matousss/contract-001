@@ -1,0 +1,44 @@
+footer {
+    width: 100%;
+}
+
+.social-btn {
+    padding: 0.5rem !important;
+    color: white;
+    transition-duration: 500ms;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 576px) {
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.fb:hover {
+    color: #4267B2;
+}
+
+.ig:hover {
+    color: #E1306C;
+}
+
+.wa:hover {
+    color: #25D366;
+}
+
+.yt:hover {
+    color: #FF0000;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    transition-duration: 200ms;
+}

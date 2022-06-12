@@ -1,6 +1,6 @@
 export function Page({children}) {
     return (
-        <div style={{height: '5000px'}}>
+        <div className={'min-vh-100'}>
             {children}
         </div>
     )
