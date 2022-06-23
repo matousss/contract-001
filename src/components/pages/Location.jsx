@@ -2,7 +2,7 @@ import {Article} from "./Article";
 
 export function Location() {
     return (
-        <div className={'pb-4'}>
+        <div className={'multi-article'}>
             <Article title={'Vila'}>
 
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis pulvinar. In laoreet, magna id viverra
@@ -38,7 +38,7 @@ export function Location() {
                     </iframe>
                 </div>
             </Article>
-            <Article title={'Koupání'} id={'1'}>
+            <Article id={'koupani'} title={'Koupání'}>
                 <p>
                     Hradištský vrch je sopečného původu. Jedná se o tzv. sopečnou - čedičovou kupu.
                 </p>
@@ -65,6 +65,26 @@ export function Location() {
                     Průzračnost vody je do 4 m.
                 </p>
                 <img className="img-fluid" src="https://via.placeholder.com/1920x1080" alt="Jezero"></img>
+            </Article>
+            <Article id={'kone'} title={'Koně'}>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ac dolor sit amet purus malesuada
+                    congue. Nulla pulvinar eleifend sem. Integer imperdiet lectus quis justo. Donec ipsum massa,
+                    ullamcorper in, auctor et, scelerisque sed, est. Phasellus rhoncus. Aliquam erat volutpat. Duis
+                    sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Temporibus autem quibusdam et
+                    aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                    molestiae non recusandae. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Mauris
+                    dictum facilisis augue. Integer pellentesque quam vel velit. Vivamus ac leo pretium faucibus.
+                    Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Morbi scelerisque luctus
+                    velit.</p>
+
+                <p>Mauris dictum facilisis augue. Aliquam erat volutpat. Cras elementum. Cum sociis natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Itaque earum rerum hic tenetur a sapiente
+                    delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
+                    asperiores repellat. Vivamus ac leo pretium faucibus. Duis pulvinar. Aenean placerat. Pellentesque
+                    pretium lectus id turpis. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu.
+                    Praesent id justo in neque elementum ultrices. Nam libero tempore, cum soluta nobis est eligendi
+                    optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                    assumenda est, omnis dolor repellendus.</p>
             </Article>
         </div>
     );

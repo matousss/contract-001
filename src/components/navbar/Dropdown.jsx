@@ -1,6 +1,6 @@
 import {Nav, Dropdown as BSD} from "react-bootstrap" ;
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+import {NavHashLink} from "react-router-hash-link";
 
 export function Dropdown({children, title, to}) {
     const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ export function Dropdown({children, title, to}) {
                      setShow(false)
                  }}>
 
-                <BSD.Toggle as={NavLink} to={to} className={'nav-link'}>{title}</BSD.Toggle>
+                <BSD.Toggle as={NavHashLink} to={to} className={'nav-link'}>{title}</BSD.Toggle>
                 <BSD.Menu>
                     {children}
                 </BSD.Menu>

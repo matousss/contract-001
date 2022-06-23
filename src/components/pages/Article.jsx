@@ -1,8 +1,8 @@
 import {Page} from "./Page";
 
-export function Article({title, children}) {
+export function Article({title, children, id}) {
     return (
-        <Page>
+        <Page id={id}>
             <div className={'container-fluid pt-4 w-50'}>
                 <div className={'row'}>
                     <div className={'col'}>

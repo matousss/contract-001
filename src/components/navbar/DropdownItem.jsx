@@ -1,9 +1,9 @@
 import {Dropdown as BSD} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 export function DropdownItem({children, to}) {
     return (
-        <BSD.Item as={Link} to={to}>
+        <BSD.Item as={HashLink} to={to}>
             {children}
         </BSD.Item>
     )

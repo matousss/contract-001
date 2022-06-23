@@ -18,9 +18,9 @@ export function Navbar() {
                <NB.Collapse className={'justify-content-left'}>
                    <Nav>
                        <NavbarLink to={'/'}>Domů</NavbarLink>
-                       <Dropdown title={'O lokalitě'} to={'/location'}>
-                           <DropdownItem to="/location#1">Koupání</DropdownItem>
-                           <DropdownItem to="/location#2">Koně</DropdownItem>
+                       <Dropdown title={'O lokalitě'} to={'/location#'}>
+                           <DropdownItem to="/location#koupani">Koupání</DropdownItem>
+                           <DropdownItem to="/location#kone">Koně</DropdownItem>
                        </Dropdown>
                        <NavbarLink to={'/gallery'}>Galerie</NavbarLink>
                        <NavbarLink to={'/about'}><nobr>O Mně</nobr></NavbarLink>
