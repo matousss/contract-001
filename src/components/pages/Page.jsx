@@ -1,8 +1,13 @@
 import './Page.css';
 import {motion} from "framer-motion";
+import {useEffect} from "react";
 
 
 export function Page({children, ...props}) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <motion.div
             className={'page'}
