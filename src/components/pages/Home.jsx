@@ -1,4 +1,5 @@
 import {Page} from "./Page";
+import background from './../../assets/mainBackground.jpg'
 
 export function Home() {
     return (
@@ -6,7 +7,8 @@ export function Home() {
             <div className={'m-0 p-0'}>
                 <div className={'row w-100 vh-100 m-0'} style={{
                     position: "relative",
-                    background: 'url(./2.jpg) no-repeat center center ',
+                    background: 'no-repeat center center ',
+                    backgroundImage: `url(${background})`,
                     backgroundSize: 'cover'
                 }}>
 
