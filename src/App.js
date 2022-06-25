@@ -1,13 +1,9 @@
 import './App.css';
-import {Home} from "./components/pages/Home";
-import {Page} from "./components/pages/Page";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {Navbar} from "./components/navbar/Navbar";
 import {Footer} from "./components/footer/Footer";
-import {Location} from "./components/pages/Location";
-import {About} from "./components/pages/About";
-import {Contact} from "./components/pages/Contact";
 import {AnimatePresence} from "framer-motion";
+import {Home, Location, Gallery, Contact, About} from "./components/pages";
 
 function App() {
   return (
@@ -17,7 +13,7 @@ function App() {
                 <Routes>
                     <Route path="/" exact={true} element={<Home/>}/>
                     <Route path="/location" element={<Location/>}/>
-                    <Route path="/gallery" element={<Page/>}/>
+                    <Route path="/gallery" element={<Gallery/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path={"*"} element={<Navigate to={'/'}/>}/>
