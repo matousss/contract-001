@@ -1,7 +1,7 @@
 .page {
     transition-duration: 300ms;
     padding-bottom: 1.5rem !important;
-    min-height: 100vh !important;
+    min-height: 95vh !important;
 }
 
 .page.home {
