@@ -2,14 +2,14 @@ import './Page.css';
 import {motion} from "framer-motion";
 
 
-export function Page({children, id}) {
+export function Page({children, ...props}) {
     return (
         <motion.div
-            className={'min-vh-100 page'}
-            initial={{opacity: .7, scale: 1.05}}
+            className={'page'}
+            initial={{opacity: .7, scale: .99}}
             animate={{opacity: 1, scale: 1}}
-            exit={{opacity: .7, scale: 1.05}}
-            id={id}
+            exit={{opacity: .7, scale: .99}}
+            {...props}
         >
             {children}
         </motion.div>

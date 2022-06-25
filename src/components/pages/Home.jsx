@@ -3,7 +3,7 @@ import background from './../../assets/mainBackground.jpg'
 
 export function Home() {
     return (
-        <Page>
+        <Page className={'page home'}>
             <div className={'m-0 p-0'}>
                 <div className={'row w-100 vh-100 m-0'} style={{
                     position: "relative",

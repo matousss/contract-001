@@ -1,8 +1,14 @@
 .page {
     transition-duration: 300ms;
+    padding-bottom: 1.5rem !important;
+    min-height: 100vh !important;
 }
 
-p {
+.page.home {
+    padding-bottom: 0 !important;
+}
+
+.page p {
     padding: 0.5rem;
     text-align: justify;
 }
