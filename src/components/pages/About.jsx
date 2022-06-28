@@ -3,7 +3,13 @@ import {Article} from "./Article";
 export function About() {
     return (
         <Article title={'O Mně'}>
+            <img className="text-start" src="https://via.placeholder.com/720x960" alt="profilová fotka" style={{
+                float:'right',
+                margin: '1rem',
+                width: '15rem',
+            }}/>
             <p>
+
                 Narodila jsem se 27.10.1969 v Plzni a dětství strávila v Tachově.
                 Vždy jsem inklinovala k humanitním oborům a umění. Od maminky a babičky jsem okoukala hodně o
                 bylinkách, jejich využití a pomoci v běžném životě.
